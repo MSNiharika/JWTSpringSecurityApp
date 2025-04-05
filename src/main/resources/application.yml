@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+  application:
+    name: JWTSpringSecuredApp 
+jwt:
+  secret: u5F7c2yQkqA8HbvhR2DJ5vEj/UGnGf3bcOj1rSPwK+nmcAq5uT7LhEm2eUhbdn3iL5ZVfxnb8hhtZsvv6eEP8Q==
+  expiration: 3600000   
+   
